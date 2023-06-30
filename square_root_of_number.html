@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Squareroot of a number - use Math.sqrt() method
+
+        const number = prompt("Please enter a number ");
+
+        const sqr = Math.sqrt(number);
+
+        document.write(`The square root of the entered number is ${sqr}`)
+        document.write("<br><br>")
+
+        // Squareroot of the number having diffrent datatypes: 
+
+        const number1 = 244.555;
+        const number2 = -88;
+        const number3 = "hello";
+
+        const result1 = Math.sqrt(number1);
+        const result2 = Math.sqrt(number2);
+        const result3 = Math.sqrt(number3);
+
+        document.write(` Squareroot of ${number1} is ${result1}` );      document.write("<br><br>");
+        document.write(` Squareroot of ${number2} is ${result2}` );      document.write("<br><br>");
+        document.write(` Squareroot of ${number3} is ${result3}` );      document.write("<br><br>");
+
+    </script>
+</body>
+</html>
