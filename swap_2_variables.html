@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Method1 = Using temporary variable
+
+      let a = prompt("Enter the first variable: ");
+      let b = prompt("Enter the second variable: ");
+      document.write(`The value of a before swapping is ${a}`);
+      document.write("<br><br>");
+      document.write(`The value of b before swapping is ${b}`);
+      document.write("<br><br>");
+
+      let temp;
+
+      temp = a;
+      a = b;
+      b = temp;
+
+      document.write(`The value of a after swapping is ${a}`);
+      document.write("<br><br>");
+      document.write(`The value of b after swapping is ${b}`);
+      document.write("<br><br>");
+
+      //Method 2 = Using destructuring assignment
+
+      let c = prompt("Enter the first variable c: "); //20
+      let d = prompt("Enter the second variable d: "); //30
+
+      document.write(`The value of c before swapping is: ${c}`);
+      document.write("<br><br>");
+      document.write(`The value of d before swapping is: ${d}`);
+      document.write("<br><br>");
+
+      //destructuring assignment
+      [c, d] = [d, c];
+
+      //First a temporary array [d ,c] is created. Here its value is [30, 20]
+      //The destructuring of array is done. i.e: [c, d] = [30, 20]
+
+      document.write(`The value of c after swapping is: ${c}`);
+      document.write("<br><br>");
+      document.write(`The value of d after swapping is: ${d}`);
+      document.write("<br><br>");
+
+      //Method 3 = Using arithmatic Operators
+      //parseInt converts numeric string to a number
+      //parseInt converts numeric string to a number
+
+      let e = parseInt(prompt("Enter first variable e:"));
+      let f = parseInt(prompt("Enter second variable f: "));
+
+      document.write(`The value of e before swapping is ${e}`);
+      document.write("<br><br>");
+      document.write(`The value of f before swapping is ${f}`);
+      document.write("<br><br>");
+
+      e = e + f;
+      f = e - f;
+      e = e - f;
+
+      document.write(`The value of e after swapping is: ${e}`);
+      document.write("<br><br>");
+      document.write(`The value of f after swapping is: ${f}`);
+      document.write("<br><br>");
+
+      // Method 4 = Using XOR Operators
+
+      let g = prompt("Enter first variable g: ");
+      let h = prompt("Enter second variable h: ");
+
+      document.write(`The value of g before swapping is ${g}`);
+      document.write("<br><br>");
+      document.write(`The value of h before swapping is ${h}`);
+      document.write("<br><br>");
+
+      // Bitwise XOR operator evaluates to true if both the operands are diffrent
+
+      g = g ^ h;
+      h = g ^ h;
+      g = g ^ h;
+
+      document.write(`The value of g after swapping is: ${g}`);
+      document.write("<br><br>");
+      document.write(`The value of h after swapping is: ${h}`);
+      document.write("<br><br>");
+
+      // Note: You can use this method for only integer (whole number) values
+    </script>
+  </body>
+</html>
