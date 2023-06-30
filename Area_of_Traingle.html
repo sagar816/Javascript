@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Area of triangle when -  base and height is known
+      const base = prompt("Enter the base Value: ");
+      const height = prompt("Enter the height Value: ");
+
+      const area1 = (base * height) / 2;
+
+      document.write(
+        `The area of traingle with base: ${base} and height: ${height} is : ${area1}`
+      );
+      document.write("<br><br>");
+
+      // ARea of triangle when - all the three sides of triangles are known, first calculate semi-perimeter and then area
+
+      const side1 = parseInt(prompt("Enter the value of side1: "));
+      const side2 = parseInt(prompt("Enter the value of side2: "));
+      const side3 = parseInt(prompt("Enter the value of side3: "));
+
+      const s = (side1 + side2 + side3) / 2;
+
+      document.write(`semiperimeter: ${s}`);
+      document.write("<br><br>");
+
+      const area2 = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+
+      document.write(
+        `The area of traingle with side1: ${side1}, side2: ${side2} and side3: ${side3} is : ${area2}`
+      );
+    </script>
+  </body>
+</html>
